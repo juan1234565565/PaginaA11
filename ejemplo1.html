@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1 - Arrastrar y Soltar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ejemplo 1 - Arrastrar y Soltar</h1>
+    </header>
+    <main>
+        <div class="contenedor-origen">
+            <div class="celda" data-valor="1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="elemento1" data-valor="1" draggable="true" ondragstart="drag(event)">Arrástrame</div>
+            </div>
+        </div>
+        <div class="contenedor-destino">
+            <div class="celda" data-valor="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </main>
+</body>
+</html>

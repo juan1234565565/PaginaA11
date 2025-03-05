@@ -1,0 +1,252 @@
+/* Estilos comunes para todas las páginas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background: #555;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80%;
+    max-width: 300px;
+    box-sizing: border-box;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #777;
+}
+
+/* Estilos específicos para ejemplo1.html (Arrastrar y Soltar) */
+.contenedor-origen, .contenedor-destino {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.celda {
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    min-height: 60px;
+}
+
+.celda div {
+    background-color: lightblue;
+    padding: 10px;
+    cursor: grab;
+}
+
+.contenedor-destino .celda {
+    background-color: #f9f9f9;
+}
+
+/* Estilos específicos para ejemplo2.html (Contador) */
+#contador {
+    font-size: 1.2em;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    background: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #777;
+}
+
+/* Estilos específicos para ejemplo3.html (Canvas) */
+canvas {
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+/* Estilos específicos para ejemplo4.html (Formulario de Registro) */
+#formulario-registro {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#formulario-registro label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulario-registro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-registro button {
+    background: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario-registro button:hover {
+    background: #777;
+}
+
+#lista-registros {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#lista-registros li {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para carrito.html */
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+#lista-carrito img {
+    margin-right: 10px;
+}
+/* Estilos específicos para ejemplo6.html (Dibujo Libre) */
+#lienzo {
+    background-color: white;
+    margin-top: 20px;
+}
+
+#color-linea, #grosor-linea {
+    margin-bottom: 10px;
+}
+
+#limpiar-lienzo {
+    background: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#limpiar-lienzo:hover {
+    background: #777;
+}
+/* Estilos específicos para ejemplo7.html (Gráfico Estadístico) */
+#grafico-navegadores {
+    max-width: 600px; /* Ajusta el tamaño del gráfico */
+    margin: 0 auto;
+}
+/* Estilos específicos para ejemplo8.html (Mostrar Imagen) */
+img {
+    border: 5px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Estilos específicos para ejemplo9.html (Mensaje Emergente) */
+#mostrar-mensaje {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#mostrar-mensaje:hover {
+    background-color: #777;
+}
+/* Estilos específicos para ejemplo10.html (Cambiar Color de Fondo) */
+#cambiar-color {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#cambiar-color:hover {
+    background-color: #777;
+}

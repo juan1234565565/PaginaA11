@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 5 - Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ejemplo 5 - Carrito de Compras</h1>
+    </header>
+    <main>
+        <h2>Productos Disponibles</h2>
+        <table id="tabla-productos">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="balon.jpg" alt="Balón de fútbol" width="50"></td>
+                    <td>Balón de fútbol</td>
+                    <td>$25</td>
+                    <td><button onclick="agregarAlCarrito(1, 'Balón de fútbol', 25, 'balon.jpg')">Agregar al carrito</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="control.jpg" alt="Control de videojuegos" width="50"></td>
+                    <td>Control de videojuegos</td>
+                    <td>$50</td>
+                    <td><button onclick="agregarAlCarrito(2, 'Control de videojuegos', 50, 'control.jpg')">Agregar al carrito</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="laptop.jpg" alt="Laptop" width="50"></td>
+                    <td>Laptop</td>
+                    <td>$800</td>
+                    <td><button onclick="agregarAlCarrito(3, 'Laptop', 800, 'laptop.jpg')">Agregar al carrito</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="telefono.jpg" alt="Teléfono inteligente" width="50"></td>
+                    <td>Teléfono inteligente</td>
+                    <td>$600</td>
+                    <td><button onclick="agregarAlCarrito(4, 'Teléfono inteligente', 600, 'telefono.jpg')">Agregar al carrito</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <a href="carrito.html"><button>Ver Carrito</button></a>
+    </main>
+</body>
+</html>
